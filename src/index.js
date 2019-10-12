@@ -1,12 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDom from 'react-dom';
+import PrimeiroComponente from './componentes/PrimeiroComponente'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// const elemento = document.getElementById('root')
+// ReactDom.render(<h1>Olá React JSX</h1>, elemento)
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const elemento = document.getElementById('root')
+// ReactDom.render(
+//     <PrimeiroComponente/>, 
+//     elemento)
+
+ReactDom.render(    
+    <PrimeiroComponente
+        nome="Daniel"
+        numero={45}
+    />, 
+    elemento)
